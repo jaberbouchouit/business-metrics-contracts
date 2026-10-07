@@ -1,0 +1,14 @@
+[
+  {"id":"both","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-10T10:00:00Z","shipped_at":"2026-07-12T10:00:00Z"},"paid_in_month":true,"shipped_in_month":true},
+  {"id":"paid-only","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-31T10:00:00Z","shipped_at":"2026-08-03T10:00:00Z"},"paid_in_month":true,"shipped_in_month":false},
+  {"id":"shipped-only","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-06-28T10:00:00Z","shipped_at":"2026-07-01T10:00:00Z"},"paid_in_month":false,"shipped_in_month":true},
+  {"id":"neither","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-06-10T10:00:00Z","shipped_at":"2026-06-12T10:00:00Z"},"paid_in_month":false,"shipped_in_month":false},
+  {"id":"missing-shipment","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-10T10:00:00Z","shipped_at":null},"paid_in_month":true,"shipped_in_month":false},
+  {"id":"missing-payment","order":{"id":"A","gross":"0","currency":"EUR","paid_at":null,"shipped_at":null},"paid_in_month":false,"shipped_in_month":false},
+  {"id":"free-order","order":{"id":"A","gross":"0","currency":"EUR","paid_at":"2026-07-10T10:00:00Z","shipped_at":null},"paid_in_month":true,"shipped_in_month":false},
+  {"id":"paris-month-start","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-06-30T22:00:00Z","shipped_at":null},"paid_in_month":true,"shipped_in_month":false},
+  {"id":"before-paris-month-start","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-06-30T21:59:59Z","shipped_at":null},"paid_in_month":false,"shipped_in_month":false},
+  {"id":"paris-month-end-exclusive","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-31T22:00:00Z","shipped_at":null},"paid_in_month":false,"shipped_in_month":false},
+  {"id":"before-paris-month-end","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-31T21:59:59Z","shipped_at":null},"paid_in_month":true,"shipped_in_month":false},
+  {"id":"explicit-local-offset","order":{"id":"A","gross":"10","currency":"EUR","paid_at":"2026-07-01T00:00:00+02:00","shipped_at":null},"paid_in_month":true,"shipped_in_month":false}
+]

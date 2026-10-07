@@ -1,0 +1,16 @@
+{
+  "complete_sources": true,
+  "orders": [
+    {"id":"A","gross":"120.00","currency":"EUR","paid_at":"2026-07-10T10:00:00Z","shipped_at":"2026-07-12T10:00:00Z"},
+    {"id":"B","gross":"80.00","currency":"EUR","paid_at":"2026-07-31T10:00:00Z","shipped_at":"2026-08-03T10:00:00Z"},
+    {"id":"C","gross":"60.00","currency":"EUR","paid_at":"2026-06-28T10:00:00Z","shipped_at":"2026-07-01T10:00:00Z"},
+    {"id":"D","gross":"40.00","currency":"EUR","paid_at":"2026-07-15T10:00:00Z","shipped_at":null},
+    {"id":"E","gross":"20.00","currency":"EUR","paid_at":"2026-07-20T10:00:00Z","shipped_at":null},
+    {"id":"F","gross":"0.00","currency":"EUR","paid_at":"2026-07-22T10:00:00Z","shipped_at":null},
+    {"id":"G","gross":"10.00","currency":"EUR","paid_at":"2026-08-01T10:00:00Z","shipped_at":null}
+  ],
+  "refunds": [
+    {"id":"R1","order_id":"E","amount":"20.00","executed_at":"2026-07-25T10:00:00Z"},
+    {"id":"R2","order_id":"B","amount":"10.00","executed_at":"2026-08-06T10:00:00Z"}
+  ]
+}

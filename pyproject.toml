@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "business-metrics-contracts"
+version = "1.0.0"
+description = "A runnable synthetic business-contract and financial-reconciliation example"
+requires-python = ">=3.11"
+dependencies = ["tzdata>=2025.1; platform_system == 'Windows'"]
+license = "MIT"
+
+[tool.setuptools.packages.find]
+where = ["src"]
